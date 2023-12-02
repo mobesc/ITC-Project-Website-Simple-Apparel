@@ -46,6 +46,11 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  .cart {
+    margin-left: 10px;
+}
+
   
 .logo {
     height: auto;
@@ -192,67 +197,6 @@
   
   small {
     color: #555;
-  }
-  
-  /* testimonial */
-  
-  .testimonial {
-    padding-top: 100px;
-  }
-  
-  .testimonial .col-3 {
-    text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: transform 0.5s;
-  }
-  
-  .testimonial .col-3 img {
-    width: 100px;
-    margin-top: 20px;
-    border-radius: 50%;
-  }
-  
-  .testimonial .col-3:hover {
-    transform: translateY(-10px);
-  }
-  
-  .fa-quote-left {
-    font-size: 34px;
-    color: #222222;
-  }
-  
-  .col-3 p {
-    font-size: 14px;
-    margin: 12px 0;
-    color: #777777;
-  }
-  
-  .testimonial .col-3 h3 {
-    font-weight: 600;
-    color: #555;
-    font-size: 16px;
-  }
-  
-  .brands {
-    margin: 100px auto;
-  }
-  
-  .col-5 {
-    width: 160px;
-  }
-  
-  .col-5 img {
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(100%);
-  }
-  
-  .col-5 img:hover {
-    width: 100%;
-    cursor: pointer;
-    filter: grayscale(0);
   }
   
   /* footer */

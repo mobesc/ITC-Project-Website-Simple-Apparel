@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Homepage.css">
     <title>Simple Apparel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Navbar -->
@@ -15,21 +16,25 @@
     Add to card/Checkout feature
     -->
     <div class="header" style="background-image: url('https://i.postimg.cc/t403yfn9/home2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="container">
+      <div class="container">
           <div class="navbar">
-            <div class="logo">
-              <a href="index.html"><img src="Logo4.png" class="logo" alt="RedStore" width="125px" /></a>
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                  <li><a href="Homepage.html">Home</a></li>
-                  <li><a href="Tshirts.html">Products</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+              <div class="logo">
+                  <a href="index.html"><img src="Logo4.png" class="logo" alt="RedStore" width="125px" /></a>
+              </div>
+              <nav>
+                  <ul id="MenuItems">
+                      <li><a href="Homepage.html">Home</a></li>
+                      <li><a href="Categories.html">Categories</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li class="search-box">
+                          <input type="text" class="search-bar" placeholder="Search">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </li>
+                  </ul>
+                  <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+                  <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
               </nav>
-            <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
-            <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
           </div>
           <div class="row">
             <div class="col-2">
@@ -40,7 +45,7 @@
               <p>
                 Discover the beauty of simplicity with our curated collection of minimalistic clothing. <br/> Each piece is thoughtfully designed to embody elegance and comfort, allowing you to express your style effortlessly. 
               </p>
-              <a href="Tshirts.html" target="_blank" rel="noopener noreferrer" class="btn">Explore</a>
+              <a href="Categories.html" target="_blank" rel="noopener noreferrer" class="btn">Explore</a>
             </div>
             <div class="col-2">
               <img src="" alt="" />
@@ -126,19 +131,6 @@
           <p class="copyright">Copyright &copy; 2023 - Simple Apparel</p>
         </div>
       </div>
-      
-      <!-- js for toggle menu -->
-      <script>
-        var MenuItems = document.getElementById('MenuItems');
-        MenuItems.style.maxHeight = '0px';
-      
-        function menutoggle() {
-          if (MenuItems.style.maxHeight == '0px') {
-            MenuItems.style.maxHeight = '200px';
-          } else {
-            MenuItems.style.maxHeight = '0px';
-          }
-        }
-      </script>
+
 </body>
 </html>
