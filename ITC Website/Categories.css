@@ -84,7 +84,7 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -165,7 +165,7 @@
   }
   
   .header {
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #ffffff);
   }
   
   .header .row {
@@ -181,17 +181,57 @@
     min-width: 250px;
     margin-bottom: 30px;
   }
+
+  .col-3 a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.col-3 a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.col-3 img {
+  border-radius: 3.0px;
+    width: 100%; /* Set width to 100% to ensure it takes up the full width of the container */
+    height: 100%; /* Set height to 100% to cover the entire container */
+    object-fit: cover; /* This property ensures that the image covers the entire container while maintaining its aspect ratio */
+    transition: transform 0.5s ease;
+}
   
   .col-3 img {
-    width: 100%;
+    width: 100%; /* Set width to 100% to ensure it takes up the full width of the container */
+  height: 400px; /* Set your desired height */
+  object-fit: cover; /* This property ensures that the image covers the entire container while maintaining its aspect ratio */
   }
   
-  .small-container {
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+  .col-3 {
+    position: relative;
+}
+
+.category-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+    font-size: 50px;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-weight: bolder;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transform transition */
+}
+
+.col-3:hover .category-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5); /* Add scale transform on hover */
+
+}
   
   .col-4 {
     flex-basis: 25%;
@@ -319,3 +359,11 @@
     display: none;
   }
  
+/* . */
+    
+  .offer {
+    background: radial-gradient(#272727, #000000);
+    margin-top: 80px;
+    padding: 100px 0;
+  }
+  
