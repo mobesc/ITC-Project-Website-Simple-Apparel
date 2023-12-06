@@ -5,41 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Tshirts.css">
     <title>Simple Apparel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html"><img src="Logo2.png" class="logo" alt="RedStore" width="125px" /></a>
+    <!-- Navbar -->
+    <div class="header">
+      <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="Logo4.png" class="logo" alt="RedStore" width="125px" /></a>
+              </div>
+              <nav>
+                  <ul id="MenuItems">
+                      <li><a href="Homepage.html">Home</a></li>
+                      <li><a href="Categories.html">Categories</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li class="search-box">
+                          <input type="text" class="search-bar" placeholder="Search">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                      </li>
+                  </ul>
+                  <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+                  <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+              </nav>
           </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="Homepage.html">Home</a></li>
-              <li><a href="product.html">Products</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-          <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
-          <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
-        </div>
-      </div>
+      
       
       <div class="small-container">
         <div class="row row-2">
-          <h2>Products</h2>
-          <select id="categoryFilter">
-            <option value="">Relevant</option>
-            <option value="T-Shirts">T-Shirts</option>
-            <option value="Jeans">Jeans</option>
-            <option value="Pants">Pants</option>
-            <option value="Shorts">Shorts</option>
-        </select>
+          <h2>Jeans</h2>
+          <div class="category-navbar">
+            <a href="Tshirts.html" data-category="T-Shirts">T-Shirts</a>
+            <a href="Jeans.html" data-category="Jeans">Jeans</a>
+            <a href="Jackets.html" data-category="Jackets">Jackets</a>
+            <a href="Sweaters.html" data-category="Sweaters">Sweaters</a>
+            <a href="Caps.html" data-category="Caps">Caps</a>
+            <a href="Glasses.html" data-category="Glasses">Glasses</a>
+            <a href="Shoes.html" data-category="Shoes">Shoes</a>
+            <!-- Add more categories as needed -->
+        </div>
         </div>
         <div class="row">
           <div class="col-4">
-            <img src="Products/shirt1.png" alt="" />
-            <h4>Bocchi T-Shirt</h4>
+            <a href="Product.html">
+              <img src="Products/Jeans1.jpg" alt="" />
+            <h4>Jeans</h4>
+            </a>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -47,12 +59,12 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/shirt2.jpeg" alt="" />
-            <h4>Forever Alone</h4>
+            <img src="Products/Jeans2.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -60,12 +72,12 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/shirt7.png" alt="" />
-            <h4>Long Journey</h4>
+            <img src="Products/Jeans3.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -73,12 +85,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <p>PHP 300</p>
+            <p>₱ 300</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/shirt4.jpeg" alt="" />
-            <h4>Moving Forward</h4>
+            <img src="Products/Jeans4.png" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -86,14 +98,14 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 300</p>
+            <p>₱ 300</p>
           </div>
         </div>
       
         <div class="row">
           <div class="col-4">
-            <img src="Products/shirt5.jpeg" alt="" />
-            <h4>Life is Short</h4>
+            <img src="Products/Jeans5.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -101,12 +113,12 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/shirt6.png" alt="" />
-            <h4>World Compass</h4>
+            <img src="Products/Jeans6.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -114,12 +126,12 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 500</p>
+            <p>₱ 500</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/pants1.png" alt="" />
-            <h4>Shorts</h4>
+            <img src="Products/Jeans7.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -127,12 +139,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/pants2.png" alt="" />
-            <h4>Shorts</h4>
+            <img src="Products/Jeans8.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -140,14 +152,14 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
         </div>
       
         <div class="row">
           <div class="col-4">
-            <img src="Products/pants3.png" alt="" />
-            <h4>Shorts</h4>
+            <img src="Products/Jeans9.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -155,12 +167,12 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/pants4.png" alt="" />
-            <h4>Shorts</h4>
+            <img src="Products/Jeans10.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -168,12 +180,12 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/pants5.png" alt="" />
-            <h4>Shorts</h4>
+            <img src="Products/Jeans11.jpg" alt="" />
+            <h4>Jeans</h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -181,12 +193,12 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
       
           <div class="col-4">
-            <img src="Products/pants6.png" alt="" />
-            <h4>Shorts </h4>
+            <img src="Products/Jeans12.jpg" alt="" />
+            <h4>Jeans </h4>
             <div class="rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -194,7 +206,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <p>PHP 250</p>
+            <p>₱ 250</p>
           </div>
         </div>
       
@@ -208,88 +220,47 @@
       </div>
       
       <!-- Footer -->
-      <div class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col-1">
-              <h3>Download our app on mobile!</h3>
-              <p></p>
-              <div class="app-logo">
-                <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
-                <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
-              </div>
-            </div>
-      
-            <div class="footer-col-2">
-              <img src="logo3.png" class="logo1">
-            </div>
-      
-            <div class="footer-col-3">
-              <h3>Links</h3>
-              <ul>
-                <li>Vouchers</li>
-                <li>Blog Post</li>
-                <li>Return Policy</li>
-                <li>Join Affiliate</li>
-              </ul>
-            </div>
-      
-            <div class="footer-col-4">
-              <h3>Follow us</h3>
-              <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-                <li>Twitter</li>
-              </ul>
-            </div>
-          </div>
-          <hr />
-          <p class="copyright">Copyright &copy; 2023 - Simple Apparel</p>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download our app on mobile!</h3>
+        <p></p>
+        <div class="app-logo">
+          <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+          <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
         </div>
       </div>
-      
-      <!-- js for toggle menu -->
-      <script>
-        var MenuItems = document.getElementById('MenuItems');
-        MenuItems.style.maxHeight = '0px';
-      
-        function menutoggle() {
-          if (MenuItems.style.maxHeight == '0px') {
-            MenuItems.style.maxHeight = '200px';
-          } else {
-            MenuItems.style.maxHeight = '0px';
-          }
 
+      <div class="footer-col-2">
+        <img src="logo3.png" class="logo1">
+      </div>
 
-          var MenuItems = document.getElementById('MenuItems');
-    MenuItems.style.maxHeight = '0px';
+      <div class="footer-col-3">
+        <h3>Links</h3>
+        <ul>
+          <li>Vouchers</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
 
-    function menutoggle() {
-        if (MenuItems.style.maxHeight == '0px') {
-            MenuItems.style.maxHeight = '200px';
-        } else {
-            MenuItems.style.maxHeight = '0px';
-        }
-    }
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2023 - Simple Apparel</p>
+  </div>
+</div>
+          
 
-    // Function to filter products based on category
-    document.getElementById('categoryFilter').addEventListener('change', function () {
-        var selectedCategory = this.value.toLowerCase();
-        var products = document.querySelectorAll('.col-4');
-
-        products.forEach(function (product) {
-            var productCategory = product.querySelector('h4').innerText.toLowerCase();
-
-            if (selectedCategory === '' || productCategory.includes(selectedCategory)) {
-                product.style.display = 'block';
-            } else {
-                product.style.display = 'none';
-            }
-        });
-    });
-
-        }
-      </script>
 </body>
 </html>

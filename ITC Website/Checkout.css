@@ -103,7 +103,7 @@ p {
   }
   
   .header {
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, #ffffff);
   }
   
   .header .row {
@@ -124,6 +124,41 @@ p {
     width: 100%;
   }
   
+  .search-box {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #555;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    border: none;
+    width: 150px;
+  }
+  
+  .search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #555; /* Adjust the color as needed */
+    cursor: pointer;
+  }
+  
+  .search-bar {
+    padding: 8px 30px 8px 8px;
+    border: none;
+    width: 150px; /* Adjust the width as needed */
+  }
+
   .small-container {
     max-width: 1080px;
     margin: auto;
